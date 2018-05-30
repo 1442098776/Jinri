@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<style type="text/css">@import url("css/style.css");</style>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Elegant Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ 
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!-- slide -->
+<script src="js/responsiveslides.min.js"></script>
+   <script>
+    $(function () {
+      $("#slider,.carousel-inner").responsiveSlides({
+      	auto: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+
+		<!-- <script type="text/javascript" src="js/jsapi.js"></script> -->
+		<script src="js/footer.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<!--header-->
+	<div class="header">
+		<div class="container">	
+			<div class="logo">
+				<h1><a href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a></h1>
+			</div>
+				<div class="top-nav">
+					<span class="menu"><img src="images/menu.png" alt=""> </span>
+					<ul>
+						<li><a href="index.html" >HOME</a></li>
+						<li><a href="about.html" > ABOUT</a></li>
+						<li><a href="join.html"> JOIN US  </a></li>
+						<li><a href="portfolio.html" >PORTFOLIO</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+					<!--script-->
+				<script>
+					$("span.menu").click(function(){
+						$(".top-nav ul").slideToggle(500, function(){
+						});
+					});
+			</script>
+				</div>
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+<!---->
+
+	<div class="container">
+		<div class="contact">
+		<h2>CONTACT</h2>
+		<div class="col-md-5 contact-map">
+				<h5>GOOGLE-MAP</h5>
+				<div class="map" id="map">
+					
+
+				</div>
+			</div>
+			<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBzE9xAESye6Kde-3hT-6B90nfwUkcS8Yw"></script>
+			<script>
+				$(function() {
+					var myCenter = new google.maps.LatLng(22.802356, 113.894962);
+
+					function initialize() {
+						var mapProp = {
+							center: myCenter,
+							zoom: 18,
+							disableDefaultUI: true,
+							gestureHandling: 'greedy',
+							zoomControl: true,
+							styles: [{
+									elementType: 'geometry',
+									stylers: [{
+										color: '#e5e5e5'
+									}]
+								},
+								{
+									elementType: 'labels.text.fill',
+									stylers: [{
+										color: '#9c9c9c'
+									}]
+								},
+								{
+									featureType: 'road',
+									elementType: 'geometry',
+									stylers: [{
+										color: '#f2f2f2'
+									}]
+								},
+								{
+							        featureType: 'poi',
+							        elementType: 'labels.text.fill',
+							        stylers: [{color: '#9d9d9d'}]
+							      },
+								{
+									featureType: 'road.highway',
+									elementType: 'geometry',
+									stylers: [{
+										color: '#cacaca'
+									}]
+								},
+
+							],
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						};
+
+						var map = new google.maps.Map(document.getElementById("map"), mapProp);
+
+						var marker = new google.maps.Marker({
+							position: myCenter,
+							icon: 'images/log1.png'
+						});
+
+						marker.setMap(map);
+
+						//			var infowindow = new google.maps.InfoWindow({
+						//				content: "深圳市今日电器有限公司"
+						//			});
+
+						//			google.maps.event.addListener(marker, 'click', function() {
+						//				infowindow.open(map, marker);
+						//			});
+					}
+
+					google.maps.event.addDomListener(window, 'load', initialize);
+				})
+			</script>
+			<div class="col-md-7 contact-para">
+			<p class="class-para">The information necessary to shape your project by sharing our opinions with us can learn or get a price quote.The information necessary to shape.
+			The information necessary to shape your project by sharing our opinions.</p>	
+			<h5>CONTACT FORM</h5>
+			<form>
+				<div class="grid-contact">
+					<div class="col-md-6 contact-grid">
+						<p >FIRST NAME</p>		
+						<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">						
+						</div>
+					<div class="col-md-6 contact-grid">
+						<p >LAST NAME</p>		
+						<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">						
+						</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="grid-contact">
+					<div class="col-md-6 contact-grid">
+					<p >E-MAIL ADDRESS</p>						
+						<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">							
+					</div>
+					<div class="col-md-6 contact-grid">						
+					<p >TELEPHONE</p>						
+						<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">							
+						</div>
+					<div class="clearfix"> </div>
+				</div>
+					<p class="your-para">MESSAGE</p>
+					<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}"></textarea>
+						<div class="send">
+							<input type="submit" value="SENT MESSAGE" >
+						</div>
+			</form>
+			</div>	
+			
+			<div class="clearfix"> </div>
+		</div>	
+	</div>	
+
+			<!---->
+<div class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="col-md-12 col-sm-12 col-xs-12 side">
+			    <div class="btn lt">
+			    </div>
+					<div>
+						<div class="box">
+							<ul class="ul">
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+								<li><a href="portfolio.html"><img src="images/Home_img_company01.png"></a></li>
+							</ul>
+						</div>
+					</div>
+				<div class="btn rt">
+				</div>
+			</div>
+			<!-- 这是屏幕小于768时显示的轮翻图，上面的轮翻图隐藏 -->
+			<div class="col-md-12 col-sm-12 col-xs-12 carouseFooter">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				        <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				    <div class="item">
+				         <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				    <div class="item">
+				        <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				    <div class="item">
+				         <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				    <div class="item">
+				        <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				    <div class="item">
+				         <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				    <div class="item">
+				        <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				    <div class="item">
+				         <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				    <div class="item">
+				        <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				    <div class="item">
+				         <a href="portfolio.html"><img src="images/Home_img_company01.png"></a>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.</p>
+<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+	</div>
+</body>
+</html>
